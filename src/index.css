@@ -1,0 +1,128 @@
+:root {
+  --clr-primary-1: #063251;
+  --clr-primary-2: #104e7a;
+  --clr-primary-3: #1a6aa2;
+  --clr-primary-4: #2d87c8;
+  --clr-primary-5: #49a6e9;
+  --clr-primary-6: #6ebef7;
+  --clr-primary-7: #8bcbf9;
+  --clr-primary-8: #a5d5f8;
+  --clr-primary-9: #c5e5fc;
+  --clr-primary-10: #ebf7ff;
+  --clr-grey-1: #102a42;
+  --clr-gold: #c59d5f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f5f8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: var(--clr-gold);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #063251;
+  font-size: 1.2rem;
+  padding: 5%;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.menu-container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2px 100px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.menu-container > * {
+  flex: 0 1 45%;
+}
+.single-meal {
+  display: flex;
+  gap: 2%;
+  width: 50%;
+  padding: 1%;
+}
+
+.second-underline {
+  border-top: 2px dashed black;
+  margin: 7px auto;
+}
+
+.meal-img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  border: 5px solid var(--clr-gold);
+  border-radius: 1%;
+}
+
+.price {
+  color: var(--clr-gold);
+}
+
+.meal-title {
+  text-transform: capitalize;
+  color: #063251;
+}
+
+.btn-container {
+  display: flex;
+  margin: 0 auto 80px auto;
+  justify-content: center;
+}
+
+.categories-btn {
+  color: var(--clr-gold);
+  padding: 10px;
+  border-radius: 4%;
+  border: none;
+  background-color: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.categories-btn:hover {
+  color: white;
+  background-color: var(--clr-gold);
+}
+
+@media only screen and (max-width: 800px) {
+  .btn-container {
+    margin-bottom: 13px;
+  }
+  .single-meal {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
